@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ByteBankRH.Funcionarios
 {
-    public class GerenteDeConta : Autenticavel
+    public class GerenteDeConta : FuncionarioAutenticavel
     {
         public GerenteDeConta(double Salario, string cpf) : base(Salario, cpf)
         {

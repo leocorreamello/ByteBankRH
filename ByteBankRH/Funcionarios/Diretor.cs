@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ByteBankRH.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : FuncionarioAutenticavel
     {
         public Diretor(double Salario, string CPF) : base(Salario, CPF) //Chama o construtor da classe pai
         {

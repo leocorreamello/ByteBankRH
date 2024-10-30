@@ -30,6 +30,11 @@ namespace ByteBankRH
             camila.Nome = "Camila";
             camila.Senha = "123";
 
+            ParceiroComercial parceiro = new ParceiroComercial();
+            parceiro.Senha = "805";
+
+            sistemaInterno.Logar(parceiro, "805");
+
             sistemaInterno.Logar(roberta, "2005");
             sistemaInterno.Logar(camila, "123");
         }

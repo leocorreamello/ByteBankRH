@@ -7,22 +7,9 @@ using System.Threading.Tasks;
 
 namespace ByteBankRH.Sistemas
 {
-    public abstract class Autenticavel : Funcionario
+    public interface IAutenticavel //É uma boa pratica colocar o I na frente do nome de uma interface
     {
-        public string Senha { get; set; }
-
-        public Autenticavel(double Salario, string CPF) : base(Salario, CPF)
-        {
-           
-        }
-
-        public bool Autenticar(string senha)
-        {
-            if (this.Senha == senha)
-                return true;
-            else
-                return false;
-        }
+        bool Autenticar(string senha);
 
     }
 }
